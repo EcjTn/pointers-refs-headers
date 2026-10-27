@@ -2,12 +2,11 @@
 #include "ecjthing.h"
 using namespace std;
 
-
 int main() {
     
     int number = 32;
     int* pNumber = &number;
-    int &ref = number; //directly changes value of number if ref change
+    int &ref = number; //dorectly changes value of number if ref change
 
     cout << "Number: " << number << endl;
     cout << "Address of number: " << pNumber << endl;
@@ -19,6 +18,12 @@ int main() {
 
     cout << "ReturnAge :" << returnAge() << endl;
     cout << "ReturnPowerNumber: " << returnPowerNumber() << endl;
+
+
+
+    int* intInHeap = new int(3); //allocates int on the heap(new int returns a memory address already)
+    cout << *intInHeap << endl; //dereferencing, 3
+    delete intInHeap; //deallocate the memory on the heap
 
     return 0;
 }
