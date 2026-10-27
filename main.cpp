@@ -6,7 +6,7 @@ int main() {
     
     int number = 32;
     int* pNumber = &number;
-    int &ref = number; //dorectly changes value of number if ref change
+    int &ref = number; //directly changes value of number if ref change
 
     cout << "Number: " << number << endl;
     cout << "Address of number: " << pNumber << endl;
