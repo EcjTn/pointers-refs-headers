@@ -25,5 +25,9 @@ int main() {
     cout << *intInHeap << endl; //dereferencing, 3
     delete intInHeap; //deallocate the memory on the heap
 
+    int arrays[3] = {8, 6, 7};
+    arrays[1] = 555; //equivalent to *(arrays + 1) = 555
+    cout << *(arrays + 1);
+
     return 0;
 }
